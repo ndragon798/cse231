@@ -1,0 +1,4 @@
+dictionary
+rockyou.txt
+dictionary_attack.zip
+q

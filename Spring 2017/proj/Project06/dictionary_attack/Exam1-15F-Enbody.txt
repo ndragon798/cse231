@@ -1,0 +1,366 @@
+
+CSE 231 FS'15             Last name (printed):  ________________________________
+
+Exam #1                  First name (printed): ________________________________
+
+Form 1 A                 
+
+
+Directions:
+
+a. DO NOT OPEN YOUR EXAM BOOKLET UNTIL YOU HAVE BEEN TOLD TO BEGIN.
+
+b. This exam booklet contains 25 questions, each of which will be weighted
+equally at 4 points each.   The total points for the exam is 100 points.
+
+c. You may use one 8.5" x 11" note sheet during the exam.  No other reference
+materials or electronic devices may be used during the examination, i.e. no
+calculators, cell phones, mp3 players, etc. Paper dictionaries are allowed.
+
+d. Questions will not be interpreted during the examination.
+
+e. You should choose the single best alternative for each question, even if
+you believe that a question is ambiguous or contains a typographic
+error.  If a question has more than one best answer, credit will be
+given for any of the correct answers.
+
+f. Please fill in the requested information at the top of this exam booklet.
+
+g. Use a #2 pencil to encode any information on the OMR form.
+
+h. Please encode the following on the OMR form:
+
+     -- Last name and first initial
+     -- MSU PID
+     -- Exam form (1 A)
+
+i. Please sign the OMR form.
+
+j. Only answers recorded on your OMR form for multiple choice questions will be 
+counted for credit.  Completely erase any responses on the OMR form that you 
+wish to delete.
+
+k. You must turn in this exam booklet and the OMR form when you have completed
+the exam.  When leaving, please be courteous to those still taking the exam.
+Form 1A
+1    2    3    4    5    6    7    8    9    10   11   12   13   14   15   
+C    D    B    D    B    C    B    C    C    B    C    A    C    B    C    
+
+16   17   18   19   20   21   22   23   24   25   
+CD   B    C    A    B    A    C    C    B    D    
+
+01.  If x = 7 and y = 3, what is x//y ?
+
+     A)  2.33333333333
+     B)  2.3
+     C)  2
+     D)  1
+     E)  None of the above.
+
+02.  What is printed by 
+         print(3**2)
+
+     A)  6
+     B)  8
+     C)  3**2
+     D)  9
+     E)  None of the above.
+
+03.  What is the value returned by 10 % 3 ?
+
+     A)  0
+     B)  1
+     C)  3
+     D)  3.33333333333
+     E)  None of the above.
+
+04.  Given a = True, b = False
+     What is returned by b or a and b ?
+
+     A)  0
+     B)  1
+     C)  True
+     D)  False
+     E)  None of the above.
+
+05.  Given x = 1, y = 0, z = 1
+     What is returned by x or (y and not z) ?
+
+     A)  0
+     B)  1
+     C)  True
+     D)  False
+     E)  None of the above.
+
+06.  What is the decimal value of the binary number 100?
+
+     A) 100
+     B) 6
+     C) 4
+     D) 2
+     E) None of the above.
+
+07. Given S = "A tiger in Africa?"
+    What is returned by S[2:8]?
+
+     A) 'tiger'
+     B) 'tiger '
+     C) ' tiger'
+     D) 'tige'
+     E) None of the above.
+
+08. Given S = "A tiger in Africa?"
+    What is returned by S[:3]?
+
+     A) 'A '
+     B) 'A'
+     C) 'A t'
+     D) 'A ti'
+     E) None of the above.
+
+09. Given S = "A tiger in Africa?"
+    What is returned by S[-1:10:-1]?
+ 
+     A) 'Africa?'
+     B) 'Africa'
+     C) '?acirfA'
+     D) 'acirfA'
+     E)  None of the above.
+
+10. What is printed by the following? 
+
+  for i in range(2,6):
+      print(i, end = ' ')
+
+  A) 2 3 4 5 6
+  B) 2 3 4 5 
+  C) 1 2 3 4 5
+  D) 0 1 2 3 4 5
+  E) None of the above.
+
+11. If s = 'mine'
+    how do I make s = 'line' ?
+
+     A) s.replace('l','m')
+     B) s[0] = 'l'
+     C) s = 'l' + s[1:]
+     D) All of the above
+     E) None of the above.
+
+12. The two statements
+       fp = open("test_in.txt")
+    and
+       fp = open("test_in.txt","r")
+    both open the file "test_in.txt" for reading.
+
+    A) True
+    B) False
+
+##############
+#  Figure 1  #
+##############
+
+  max = int(input("Input an integer: "))
+  i = 0
+  
+  while i < max:
+    i += 1
+    if i < 3:
+        continue
+    print(i, end = " ")
+  else:
+    i += 1
+    print(i) 
+   
+13.  In Figure 1 what is printed if 5 is input?
+
+     A) 1 2 3 4 5 
+     B) 1 2 3 4 5 6
+     C) 3 4 5 6
+     D) 3 4 5
+     E) None of the above.
+
+14.  In Figure 1 what is printed if 0 is input?
+
+     A) 0
+     B) 1
+     C) 1 2
+     D) 3 4
+     E) None of the above.
+
+############
+# Figure 2 #
+
+   x,y = 0,1
+   x,y = y,x
+   print(x,y)     # Line 1
+
+15. What is printed by Line 1 of Figure 2?
+
+     A) 0 0
+     B) 1 1 
+     C) 1 0 
+     D) 0 1 
+     E) None of the above.
+
+16. Which of the following expressions valid in Python?
+
+    A) float("ab")
+    B) str(ab)
+    C) int("-2")
+    D) str(5)
+    E) None are valid in Python.
+
+############
+# Figure 3 #
+
+  s = "Cleese"
+  cnt1 = 0
+  cnt2 = 0
+  for ch in s:
+      if ch.lower() in 'def':
+          continue
+      if ch.lower() > 'c':
+          cnt1 += 1
+      else:
+          cnt2 += 1
+  else:
+      print("else")    # Line 1
+  print(cnt1)          # Line 2
+  print(cnt2)          # Line 3
+  
+17. When the code in Figure 3 is run what is printed by Line 2?
+
+     A) 3
+     B) 2
+     C) 1
+     D) 0
+     E) None of the above.
+
+18. When the code in Figure 3 is run what is printed by Line 3?
+
+     A) 3
+     B) 2
+     C) 1
+     D) 0
+     E) None of the above.
+
+19. When the code in Figure 3 is run, is Line 1 executed (i.e. "else" gets printed)?
+
+     A) Yes
+     B) No
+
+############
+# Figure 4 #
+############
+
+   0 ... P
+   1 ... y
+   2 ... t
+   3 ... h
+   4 ... o
+   5 ... n
+12345678901
+
+20. Which code prints the first six lines in Figure 4?
+    The digits 12345678901 are there to help you count spaces;
+    they are not part of the print loop.
+    Note the spacing and right-left justification.
+
+    A) for x,y in enumerate("Python"):
+           print("{} {} {}".format(x,"...",y))
+               
+    B) for x,y in enumerate("Python"):
+           print("{:4d} {}{:>2s}".format(x,"...",y))
+    
+    C) for x,y in enumerate("Python"):
+           print("{:4d} {:4s}{:>2s}".format(x,"...",y))
+        
+    D) for x,y in enumerate("Python"):
+           print("{:4d} {:3s}{:2s}".format(x,"...",y))
+
+    E) None of the above.
+
+21. Which code prints these even numbers decreasing: 10 8 6 4 2 
+
+    A) for i in range(10,0,-2):
+         print(i, end = ' ')
+    
+    B) for i in range(10:0:-2):
+         print(i, end = ' ')
+    
+    C) for i in range(0,10,-2):
+         print(i, end = ' ')
+    
+    D) for i in range(5,-1):
+         print(2*i, end = ' ')
+    
+    E) None of the above.
+
+
+
+  num1 = int(input("Enter an int:"))                     ############
+  num2 = int(input("Enter an another int:"))             # Figure 5 #
+  yy = 0                                                 ############
+  xx = 0                                               
+  while yy < num1:
+      for index in range(num2):
+          xx += yy
+      else:
+          xx += 1
+      yy += 1
+  else:
+      xx += 1
+    
+  print(yy)     # Line 1
+  print(xx)     # Line 2
+  
+22. Given first input 2 and second input 3, what is printed by Line 1 of Figure 5?
+
+    A) 0
+    B) 1
+    C) 2
+    D) 3
+    E) None of the above.
+
+23. Given first input 2 and second input 3, what is printed by Line 2 of Figure 5?
+
+    A) 2
+    B) 4
+    C) 6
+    D) 7
+    E) None of the above.
+
+24. Given first input 0 and second input 0, what is printed by Line 2 of Figure 5?
+    
+    A) 0
+    B) 1
+    C) 2
+    D) 3
+    E) None of the above.
+
+############
+# Figure 6 #
+############
+
+  outfile = open("test.txt","w")
+
+  print("One",end=",")
+  print("Two",file=outfile)
+  outfile.write("Three")
+  outfile.close()
+
+25. What are the contents of the file "test.txt" created by the code in Figure 6?
+
+    A) One,
+       Two
+       Three
+    
+    B) TwoThree
+
+    C) One,TwoThree
+
+    D) Two
+       Three
+
+    E) None of the above.

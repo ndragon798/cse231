@@ -1,0 +1,21 @@
+# Dictionary created from the file test.txt
+In [15]: completions
+Out[15]: 
+{(0, 's'): {'sofa', 'soffit', 'son', 'such', 'suit', 'sun'},
+ (0, 't'): {'to', 'tom', 'too', 'toot', 'tow', 'town'},
+ (1, 'o'): {'sofa', 'soffit', 'son', 'to', 'tom', 'too', 'toot', 'tow', 'town'},
+ (1, 'u'): {'such', 'suit', 'sun'},
+ (2, 'c'): {'such'},
+ (2, 'f'): {'sofa', 'soffit'},
+ (2, 'i'): {'suit'},
+ (2, 'm'): {'tom'},
+ (2, 'n'): {'son', 'sun'},
+ (2, 'o'): {'too', 'toot'},
+ (2, 'w'): {'tow', 'town'},
+ (3, 'a'): {'sofa'},
+ (3, 'f'): {'soffit'},
+ (3, 'h'): {'such'},
+ (3, 'n'): {'town'},
+ (3, 't'): {'suit', 'toot'},
+ (4, 'i'): {'soffit'},
+ (5, 't'): {'soffit'}}

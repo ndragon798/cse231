@@ -1,0 +1,9 @@
+facebook_1000_data.txt
+88
+yes
+20
+yes
+5
+yes
+500
+no

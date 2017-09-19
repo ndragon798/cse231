@@ -1,0 +1,7 @@
+small_network_data.txt
+0
+yes
+3
+yes
+8
+No

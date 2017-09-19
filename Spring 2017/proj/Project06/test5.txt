@@ -1,0 +1,7 @@
+both
+short_dict.txt
+brute_force.zip
+both
+rockyou.txt
+dictionary_attack.zip
+q

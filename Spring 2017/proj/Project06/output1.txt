@@ -1,0 +1,10 @@
+Cracking zip files.
+Warning cracking passwords is illegal due to Computer Fraud and Abuse Act (CFAA) and has a max prison term of 1 year.
+("What type of cracking ('brute force','dictionary','both','q'): ", '')
+dictionary
+Dictionary Cracking
+
+('Enter dictionary file name: ', '')
+rockyou.txt
+('Enter zip file name: ', '')
+dictionary_attack.zip

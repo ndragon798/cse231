@@ -1,0 +1,143 @@
+
+    *------------------------------------------------------*
+    *-------------* Thumb and Pouch Solitaire *------------*
+    *------------------------------------------------------*
+    Foundation: Columns are numbered 1, 2, ..., 4; built 
+                up by rank and by suit from Ace to King. 
+                You can't move any card from foundation, 
+                you can just put in.
+
+    Tableau:    Columns are numbered 1, 2, 3, ..., 7; built 
+                down by rank only, but cards can't be laid on 
+                one another if they are from the same suit. 
+                You can move one or more faced-up cards from 
+                one tableau to another. An empty spot can be 
+                filled with any card(s) from any tableau or 
+                the top card from the waste.
+     
+     To win, all cards must be in the Foundation.
+
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[   ]     [   ]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ 8♦     XX     XX     XX     XX     XX     XX    
+        7♣     XX     XX     XX     XX     XX    
+               K♣     XX     XX     XX     XX    
+                      8♣     XX     XX     XX    
+                            10♥     XX     XX    
+                                    3♥     XX    
+                                           3♦    
+================= STOCK/WASTE =================
+Stock #(23) ==> [ 9♥]
+
+Game commands:
+    TF x y     Move card from Tableau column x to Foundation y.
+    TT x y n   Move pile of length n >= 1 from Tableau column x 
+               to Tableau column y.
+    WF x       Move the top card from the waste to Foundation x                
+    WT x       Move the top card from the waste to Tableau column x        
+    SW         Draw one card from Stock to Waste
+    R          Restart the game
+    H          Display this menu of choices
+    Q          Quit the game
+
+
+prompt :> 
+Error: no command entered
+Try again.
+
+prompt :> tf 1 2 3
+Error: wrong number of arguments
+Try again.
+
+prompt :> tf
+Error: wrong number of arguments
+Try again.
+
+prompt :> tf 9 9
+Error: arguments must be numbers in range
+Try again.
+
+prompt :> tt
+Error: wrong number of arguments
+Try again.
+
+prompt :> tt 9 9 9
+Error: arguments must be numbers in range
+Try again.
+
+prompt :> wf
+Error: wrong number of arguments
+Try again.
+
+prompt :> wf 2 2
+Error: wrong number of arguments
+Try again.
+
+prompt :> wt
+Error: wrong number of arguments
+Try again.
+
+prompt :> sw 2
+Error: wrong number of arguments
+Try again.
+
+prompt :> h
+
+Game commands:
+    TF x y     Move card from Tableau column x to Foundation y.
+    TT x y n   Move pile of length n >= 1 from Tableau column x 
+               to Tableau column y.
+    WF x       Move the top card from the waste to Foundation x                
+    WT x       Move the top card from the waste to Tableau column x        
+    SW         Draw one card from Stock to Waste
+    R          Restart the game
+    H          Display this menu of choices
+    Q          Quit the game
+
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[   ]     [   ]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ 8♦     XX     XX     XX     XX     XX     XX    
+        7♣     XX     XX     XX     XX     XX    
+               K♣     XX     XX     XX     XX    
+                      8♣     XX     XX     XX    
+                            10♥     XX     XX    
+                                    3♥     XX    
+                                           3♦    
+================= STOCK/WASTE =================
+Stock #(23) ==> [ 9♥]
+
+prompt :> r
+
+Game commands:
+    TF x y     Move card from Tableau column x to Foundation y.
+    TT x y n   Move pile of length n >= 1 from Tableau column x 
+               to Tableau column y.
+    WF x       Move the top card from the waste to Foundation x                
+    WT x       Move the top card from the waste to Tableau column x        
+    SW         Draw one card from Stock to Waste
+    R          Restart the game
+    H          Display this menu of choices
+    Q          Quit the game
+
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[   ]     [   ]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ J♦     XX     XX     XX     XX     XX     XX    
+        K♥     XX     XX     XX     XX     XX    
+              10♠     XX     XX     XX     XX    
+                      3♦     XX     XX     XX    
+                             7♣     XX     XX    
+                                    K♣     XX    
+                                           5♥    
+================= STOCK/WASTE =================
+Stock #(23) ==> [10♥]
+
+prompt :> q

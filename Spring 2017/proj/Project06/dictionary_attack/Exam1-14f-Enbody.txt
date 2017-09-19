@@ -1,0 +1,414 @@
+
+CSE 231 FS'14             Last name (printed):  ________________________________
+
+Exam #1                  First name (printed): ________________________________
+
+Form 1 A                 
+
+
+Directions:
+
+a. DO NOT OPEN YOUR EXAM BOOKLET UNTIL YOU HAVE BEEN TOLD TO BEGIN.
+
+b. This exam booklet contains 30 questions, each of which will be weighted
+equally at 5 points each.   The total points for the exam is 150 points.
+
+c. You may use one 8.5" x 11" note sheet during the exam.  No other reference
+materials or electronic devices may be used during the examination, i.e. no
+calculators, cell phones, mp3 players, etc. Paper dictionaries are allowed.
+
+d. Questions will not be interpreted during the examination.
+
+e. You should choose the single best alternative for each question, even if
+you believe that a question is ambiguous or contains a typographic
+error.  If a question has more than one best answer, credit will be
+given for any of the correct answers.
+
+f. Please fill in the requested information at the top of this exam booklet.
+
+g. Use a #2 pencil to encode any information on the OMR form.
+
+h. Please encode the following on the OMR form:
+
+     -- Last name and first initial
+     -- MSU PID
+     -- Exam form (1 A)
+
+i. Please sign the OMR form.
+
+j. Only answers recorded on your OMR form for multiple choice questions will be 
+counted for credit.  Completely erase any responses on the OMR form that you 
+wish to delete.
+
+k. You must turn in this exam booklet and the OMR form when you have completed
+the exam.  When leaving, please be courteous to those still taking the exam.
+**********
+Form A
+  1   2   3   4   5   6   7   8   9  10
+ BC   B   C   B  AD  AD   D   C   B   D
+
+ 11  12  13  14  15  16  17  18  19  20
+  E   B   C   D   B   D  AB   C   C   B
+
+ 21  22  23  24  25  26  27  28  29  30
+  D   C  CD  CD   D   A   A   E   B   C
+
+01. What is a namespace?
+
+   A) A collection of values of variables.
+   B) A collection of associations between names and their values.
+   C) A collection of associations between names and their objects.
+   D) A collection of names.
+   E) None of the above.
+
+02.  If x = 6 and y = 4, what is float(x//y)?
+
+     A)  1.5
+     B)  1.0
+     C)  1
+     D)  0
+     E)  None of the above.
+
+03.  What is printed by 
+         print(2e3)
+
+     A)  40.71  # 2 * math.e ** 3
+     B)  8
+     C)  2000.0
+     D)  6
+     E)  None of the above.
+
+04.  What is the value returned by 11 % 5 ?
+
+     A)  0
+     B)  1
+     C)  2
+     D)  3
+     E)  None of the above.
+
+05.  Given a = False, b = True
+     What is returned by a and b and a ?
+
+     A)  0
+     B)  1
+     C)  True
+     D)  False
+     E)  None of the above.
+
+06.  Given x = 0, y = 1, z = -1
+     What is returned by (x and y) or (x and z) ?
+
+     A)  0
+     B)  1
+     C)  True
+     D)  False
+     E)  None of the above.
+
+07.  What is the decimal value of the binary number 101?
+
+     A) 101
+     B) 11
+     C) 3
+     D) 5
+     E) None of the above.
+
+08. Given S = "The parrot is dead!"
+    What is returned by S[7:11]?
+
+     A) ' rot'
+     B) ' rot '
+     C) 'rot '
+     D) 'rot'
+     E) None of the above.
+
+09. Given S = "The parrot is dead!"
+    What is returned by S[:4]?
+
+     A) 'The p'
+     B) 'The '
+     C) 'The'
+     D) 'Th'
+     E) None of the above.
+
+10. Given S = "The parrot is dead!"
+    What is returned by S[8:-8]?
+
+     A) 'to'
+     B) ' to'
+     C) 'ot'
+     D) 'ot '
+     E) None of the above.
+
+11. Given S = "The parrot is dead!"
+    What is returned by S[:5:-1]?
+ 
+     A) '!daed si'
+     B) '!daed si '
+     C) 'torrap ehT'
+     D) ' torrap ehT'
+     E)  None of the above.
+
+12. What is printed by the following? 
+
+  for i in range(2,7):
+      print(i, end = ' ')
+
+  A) 2 3 4 5 6 7
+  B) 2 3 4 5 6
+  C) 3 4 5 6 7
+  D) 3 4 5 6
+  E) None of the above.
+
+13. If s = 'feet'
+    how do I make s = 'foot' ?
+
+     A) s.replace(e,o)
+     B) s[1:3] = 'oo'
+     C) s = s[0] + 'oo' + s[-1]
+     D) All of the above
+     E) None of the above.
+
+##############
+#  Figure 1  #
+##############
+
+  N_str = input("Input an integer: ")
+  N = int(N_str)
+  i = 1
+  while 0 < i < N:
+    i += 1
+    if i < 4:
+        continue
+    print(i, end = " ")
+    i += 1
+  else:
+    print(i) 
+  
+14.  In Figure 1 what is printed if 7 is input?
+
+     A) 1 2 3 4 5 6 7 8  
+     B) 4 5 6 7 
+     C) 4 5 6  
+     D) 4 6 7 
+     E) None of the above.
+
+15.  In Figure 1 what is printed if 0 is input?
+
+     A) 0
+     B) 1
+     C) 2
+     D) 0 1
+     E) None of the above.
+
+############
+# Figure 2 #
+
+   x = 1
+   y = 2
+   x,y = y,x
+   print(x,y)     # Line 1
+
+16. What is printed by Line 1 of Figure 2?
+
+     A) 1 1
+     B) 2 2 
+     C) 1 2 
+     D) 2 1 
+     E) None of the above.
+
+17. Given i = 0 and j = 1
+    how do I print: 1 4 7 10
+
+     A) while i <= 3:
+            print(i + 2*j - 1, end = ' ')
+            i += 1
+            j += 1
+     
+     B) while i < 4:
+            print(2*i + j, end = ' ')
+            i += 1
+            j += 1
+
+     C) while i < 4:
+            print(i + j, end = ' ')
+            i += 1
+            j += 2*i + 1
+
+     D) All of the above
+
+     E) None of the above
+      
+
+############
+# Figure 3 #
+
+  s = "Phoenix"
+  cnt1 = 0
+  cnt2 = 0
+  for ch in s:
+      if ch in 'aeiou':
+          cnt1 += 1
+      if ch == 'x':
+          break
+      if ch not in 'aeiou':
+          cnt2 += 1
+  else:
+      print("else")    # Line 1
+  print(cnt1)          # Line 2
+  print(cnt2)          # Line 3
+ 
+18. When the code in Figure 3 is run what is printed by Line 2?
+
+     A) 1
+     B) 2
+     C) 3
+     D) 4
+     E) None of the above.
+
+19. When the code in Figure 3 is run what is printed by Line 3?
+
+     A) 1
+     B) 2
+     C) 3
+     D) 4
+     E) None of the above.
+
+20. When the code in Figure 3 is run, is Line 1 executed (i.e. "else" gets printed)?
+
+     A) True
+     B) False
+     C) None of the above.
+
+############
+# Figure 4 #
+############
+
+0   --> G  
+1   --> u  
+2   --> i  
+3   --> d  
+4   --> o  
+123456789
+
+21. Which code prints the first four lines in Figure 4?
+    The digits 123456789 are there to help you count spaces;
+    they are not part of the print loop.
+    Note the spacing and right-left justification.
+
+    A) for x,y in enumerate("Guido"):
+           print("{} --> {}".format(x,y))
+
+    B) for x,y in enumerate("Guido"):
+           print("{:3d} --> {:3s}".format(x,y))
+
+    C) for x,y in enumerate("Guido"):
+           print("{:<3d} --> {:>3s}".format(x,y))
+
+    D) for x,y in enumerate("Guido"):
+           print("{:<3d} --> {:3s}".format(x,y))
+
+    E) None of the above.
+
+22. What does this statement print?
+       print("pi is {:8.4f}.".format(math.pi))
+    Note the spacing and right-left justification.
+    Assume that math.pi = 3.141592653589793
+
+    A) pi is 3.141592653589793.
+    B) pi is 3.141593.
+    C) pi is   3.1416.
+    D) pi is 3.1416  .
+    E) None of the above.
+
+23. Which code prints the first five, non-negative, even numbers: 0 2 4 6 8
+
+     A) for i in range(0,8,2):
+            print(i, end = ' ')
+
+     B) for i in range(,10,2):
+            print(i, end = ' ')
+
+     C) for i in range(0,9,2):
+            print(i, end = ' ')
+
+     D) for i in range(0,5):
+            print(2*i, end = ' ')
+
+     E) None of the above.
+
+24. Given that a file has been successfully opened with
+       fp = open("in.txt","w")
+    and 
+       s = "Hello World"
+    which statement writes string s to file in.txt?
+
+    A) fp.writeline(s)
+    B) "in.txt".write(s)
+    C) fp.write(s)
+    D) print(s,file=fp)
+    E) None of the above.
+
+  in_str = input("Enter a string:")                         ############
+  count = int(input("Enter an int:"))                       # Figure 5 #
+                                                            ############
+  the_sum = 0
+  index = 1                            
+  while index <= len(in_str) - 1:         # Line 1
+      if in_str[index - 1] > in_str[index]:
+          the_sum += int(in_str[index])
+      index += 1                          # Line 2
+  
+  while count > 0:
+      in_str = in_str[0] + in_str[:-1]
+      count -= 1
+  
+  print(the_sum)      # Line 3
+  print(in_str)       # Line 4
+
+25. Given first input 12321 and second input 3, what is printed by Line 3 of Figure 5?
+
+    A) 0
+    B) 1
+    C) 2
+    D) 3
+    E) None of the above.
+
+26. Given first input 112233 and second input 2, what is printed by Line 3 of Figure 5?
+
+    A) 0
+    B) 1
+    C) 2
+    D) 3
+    E) None of the above.
+
+27. Given first input 12321 and second input 3, what is printed by Line 4 of Figure 5?
+
+    A) 11112
+    B) 12321
+    C) 11111
+    D) 11122
+    E) None of the above.
+
+28. Given first input 112233 and second input 5, what is printed by Line 4 of Figure 5?
+
+    A) 11112
+    B) 12321
+    C) 11111
+    D) 11122
+    E) None of the above.
+
+29. Which of the following statements is equivalent to Line 2 of Figure 5? 
+
+    A) index = index + index
+    B) index = index + 1
+    C) index =+ 1
+    D) index = 1 + 1
+    E) None of the above.
+
+30. Which of the following statements iterates through the same values as Line 1 in Figure 5?
+
+    A) for index in range(0,len(in_str)):
+    B) for index in range(1,len(in_str)-1)):
+    C) while index < len(in_str):
+    D) All of the above.
+    E) None of the above.

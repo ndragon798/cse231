@@ -1,0 +1,346 @@
+
+    *------------------------------------------------------*
+    *-------------* Thumb and Pouch Solitaire *------------*
+    *------------------------------------------------------*
+    Foundation: Columns are numbered 1, 2, ..., 4; built 
+                up by rank and by suit from Ace to King. 
+                You can't move any card from foundation, 
+                you can just put in.
+
+    Tableau:    Columns are numbered 1, 2, 3, ..., 7; built 
+                down by rank only, but cards can't be laid on 
+                one another if they are from the same suit. 
+                You can move one or more faced-up cards from 
+                one tableau to another. An empty spot can be 
+                filled with any card(s) from any tableau or 
+                the top card from the waste.
+     
+     To win, all cards must be in the Foundation.
+
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[   ]     [   ]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ 5♠     XX     XX     XX     XX     XX     XX    
+        4♥     XX     XX     XX     XX     XX    
+              10♦     XX     XX     XX     XX    
+                      K♦     XX     XX     XX    
+                             7♣     XX     XX    
+                                    7♠     XX    
+                                           A♠    
+================= STOCK/WASTE =================
+Stock #(23) ==> [ A♣]
+
+Game commands:
+    TF x y     Move card from Tableau column x to Foundation y.
+    TT x y n   Move pile of length n >= 1 from Tableau column x 
+               to Tableau column y.
+    WF x       Move the top card from the waste to Foundation x                
+    WT x       Move the top card from the waste to Tableau column x        
+    SW         Draw one card from Stock to Waste
+    R          Restart the game
+    H          Display this menu of choices
+    Q          Quit the game
+
+
+prompt :> wf 1
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [   ]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ 5♠     XX     XX     XX     XX     XX     XX    
+        4♥     XX     XX     XX     XX     XX    
+              10♦     XX     XX     XX     XX    
+                      K♦     XX     XX     XX    
+                             7♣     XX     XX    
+                                    7♠     XX    
+                                           A♠    
+================= STOCK/WASTE =================
+Stock #(23) ==> [  ]
+
+prompt :> tf 7 2
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [ A♠]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ 5♠     XX     XX     XX     XX     XX     XX    
+        4♥     XX     XX     XX     XX     XX    
+              10♦     XX     XX     XX     XX    
+                      K♦     XX     XX     XX    
+                             7♣     XX     XX    
+                                    7♠     6♦    
+================= STOCK/WASTE =================
+Stock #(23) ==> [  ]
+
+prompt :> sw
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [ A♠]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ 5♠     XX     XX     XX     XX     XX     XX    
+        4♥     XX     XX     XX     XX     XX    
+              10♦     XX     XX     XX     XX    
+                      K♦     XX     XX     XX    
+                             7♣     XX     XX    
+                                    7♠     6♦    
+================= STOCK/WASTE =================
+Stock #(22) ==> [ 9♣]
+
+prompt :> tt 2 1 1
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [ A♠]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ 5♠     2♠     XX     XX     XX     XX     XX    
+ 4♥            XX     XX     XX     XX     XX    
+              10♦     XX     XX     XX     XX    
+                      K♦     XX     XX     XX    
+                             7♣     XX     XX    
+                                    7♠     6♦    
+================= STOCK/WASTE =================
+Stock #(22) ==> [ 9♣]
+
+prompt :> tf 2 2
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [ 2♠]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ 5♠            XX     XX     XX     XX     XX    
+ 4♥            XX     XX     XX     XX     XX    
+              10♦     XX     XX     XX     XX    
+                      K♦     XX     XX     XX    
+                             7♣     XX     XX    
+                                    7♠     6♦    
+================= STOCK/WASTE =================
+Stock #(22) ==> [ 9♣]
+
+prompt :> tt 4 2
+Error: wrong number of arguments
+Try again.
+
+prompt :> tt 4 2 1
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [ 2♠]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ 5♠     K♦     XX     XX     XX     XX     XX    
+ 4♥            XX     XX     XX     XX     XX    
+              10♦     4♠     XX     XX     XX    
+                             XX     XX     XX    
+                             7♣     XX     XX    
+                                    7♠     6♦    
+================= STOCK/WASTE =================
+Stock #(22) ==> [ 9♣]
+
+prompt :> tt 1 7 2
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [ 2♠]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+        K♦     XX     XX     XX     XX     XX    
+               XX     XX     XX     XX     XX    
+              10♦     4♠     XX     XX     XX    
+                             XX     XX     XX    
+                             7♣     XX     XX    
+                                    7♠     6♦    
+                                           5♠    
+                                           4♥    
+================= STOCK/WASTE =================
+Stock #(22) ==> [ 9♣]
+
+prompt :> tt 7 5 3
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [ 2♠]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+        K♦     XX     XX     XX     XX     XX    
+               XX     XX     XX     XX     XX    
+              10♦     4♠     XX     XX     XX    
+                             XX     XX     XX    
+                             7♣     XX     7♥    
+                             6♦     7♠           
+                             5♠                  
+                             4♥                  
+================= STOCK/WASTE =================
+Stock #(22) ==> [ 9♣]
+
+prompt :> tt 4 1 2
+Error: insufficient number of cards to move
+Try again.
+
+prompt :> wt 3
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [ 2♠]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+        K♦     XX     XX     XX     XX     XX    
+               XX     XX     XX     XX     XX    
+              10♦     4♠     XX     XX     XX    
+               9♣            XX     XX     XX    
+                             7♣     XX     7♥    
+                             6♦     7♠           
+                             5♠                  
+                             4♥                  
+================= STOCK/WASTE =================
+Stock #(22) ==> [  ]
+
+prompt :> ws
+ws is an Invalid Command
+Try again.
+
+prompt :> sw
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [ 2♠]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+        K♦     XX     XX     XX     XX     XX    
+               XX     XX     XX     XX     XX    
+              10♦     4♠     XX     XX     XX    
+               9♣            XX     XX     XX    
+                             7♣     XX     7♥    
+                             6♦     7♠           
+                             5♠                  
+                             4♥                  
+================= STOCK/WASTE =================
+Stock #(21) ==> [ K♥]
+
+prompt :> wt 1
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [ 2♠]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ K♥     K♦     XX     XX     XX     XX     XX    
+               XX     XX     XX     XX     XX    
+              10♦     4♠     XX     XX     XX    
+               9♣            XX     XX     XX    
+                             7♣     XX     7♥    
+                             6♦     7♠           
+                             5♠                  
+                             4♥                  
+================= STOCK/WASTE =================
+Stock #(21) ==> [  ]
+
+prompt :> sw
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [ 2♠]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ K♥     K♦     XX     XX     XX     XX     XX    
+               XX     XX     XX     XX     XX    
+              10♦     4♠     XX     XX     XX    
+               9♣            XX     XX     XX    
+                             7♣     XX     7♥    
+                             6♦     7♠           
+                             5♠                  
+                             4♥                  
+================= STOCK/WASTE =================
+Stock #(20) ==> [ 8♣]
+
+prompt :> wt 3
+Error: invalid move due to mismatched cards
+Try again.
+
+prompt :> sw
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [ 2♠]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ K♥     K♦     XX     XX     XX     XX     XX    
+               XX     XX     XX     XX     XX    
+              10♦     4♠     XX     XX     XX    
+               9♣            XX     XX     XX    
+                             7♣     XX     7♥    
+                             6♦     7♠           
+                             5♠                  
+                             4♥                  
+================= STOCK/WASTE =================
+Stock #(19) ==> [ 8♣,  8♦]
+
+prompt :> wt 3
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [ 2♠]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ K♥     K♦     XX     XX     XX     XX     XX    
+               XX     XX     XX     XX     XX    
+              10♦     4♠     XX     XX     XX    
+               9♣            XX     XX     XX    
+               8♦            7♣     XX     7♥    
+                             6♦     7♠           
+                             5♠                  
+                             4♥                  
+================= STOCK/WASTE =================
+Stock #(19) ==> [ 8♣]
+
+prompt :> tt 5 3 4
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [ 2♠]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ K♥     K♦     XX     XX     XX     XX     XX    
+               XX     XX     XX     XX     XX    
+              10♦     4♠     XX     XX     XX    
+               9♣            6♣     XX     XX    
+               8♦                   XX     7♥    
+               7♣                   7♠           
+               6♦                                
+               5♠                                
+               4♥                                
+================= STOCK/WASTE =================
+Stock #(19) ==> [ 8♣]
+
+prompt :> tt 5 6 1
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [ 2♠]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ K♥     K♦     XX     XX     XX     XX     XX    
+               XX     XX     XX     XX     XX    
+              10♦     4♠     5♣     XX     XX    
+               9♣                   XX     XX    
+               8♦                   XX     7♥    
+               7♣                   7♠           
+               6♦                   6♣           
+               5♠                                
+               4♥                                
+================= STOCK/WASTE =================
+Stock #(19) ==> [ 8♣]
+
+prompt :> tt 5 6 1
+Error: invalid move due to mismatched cards
+Try again.
+
+prompt :> tt 4 5 1
+================= FOUNDATION =================
+f1        f2        f3        f4        
+[ A♣]     [ 2♠]     [   ]     [   ]     
+==================  TABLEAU  =================
+ t1     t2     t3     t4     t5     t6     t7    
+ K♥     K♦     XX     XX     XX     XX     XX    
+               XX     K♣     XX     XX     XX    
+              10♦            5♣     XX     XX    
+               9♣            4♠     XX     XX    
+               8♦                   XX     7♥    
+               7♣                   7♠           
+               6♦                   6♣           
+               5♠                                
+               4♥                                
+================= STOCK/WASTE =================
+Stock #(19) ==> [ 8♣]
